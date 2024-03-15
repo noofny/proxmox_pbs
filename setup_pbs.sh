@@ -18,11 +18,7 @@ echo "Fetching package key..."
 wget https://enterprise.proxmox.com/debian/proxmox-release-bookworm.gpg -O /etc/apt/trusted.gpg.d/proxmox-release-bookworm.gpg
 
 echo "Adding package repos..."
-# deb http://deb.debian.org/debian bookworm main contrib
-# deb http://deb.debian.org/debian bookworm-updates main contrib
-# # security updates
-# deb http://security.debian.org/debian-security bookworm-security main contrib
-nano /etc/apt/sources.list
+echo 'deb http://download.proxmox.com/debian/pbs bookworm pbs-no-subscription' >> /etc/apt/sources.list
 
 echo "Executing installer..."
 apt update && apt install proxmox-backup-server

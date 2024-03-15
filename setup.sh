@@ -91,8 +91,7 @@ pct create "${CONTAINER_ID}" "${TEMPLATE_STRING}" \
 
 # Configure container
 info "Configuring LXC container..."
-# pct resize "${CONTAINER_ID}" rootfs 50G || fatal "Failed to expand root volume!"
-pct set "${CONTAINER_ID}" -mp0 /mnt/docs,mp=/mnt/docs
+pct set "${CONTAINER_ID}" -mp0 /mnt/ceph-fs-1,mp=/mnt/pve/ceph-fs-1
 
 
 # Start container
