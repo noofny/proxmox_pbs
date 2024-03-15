@@ -91,7 +91,7 @@ pct create "${CONTAINER_ID}" "${TEMPLATE_STRING}" \
 
 # Configure container
 info "Configuring LXC container..."
-pct set "${CONTAINER_ID}" -mp0 /mnt/ceph-fs-1,mp=/mnt/pve/ceph-fs-1
+pct set "${CONTAINER_ID}" -mp0 /mnt/pve/ceph-fs-1,mp=/mnt/ceph-fs-1,replicate=0,shared=1
 
 
 # Start container
