@@ -4,9 +4,9 @@
     <img height="200" alt="Proxmox Logo" src="img/logo_proxmox.png">
 </p>
 
-Create a [ProxMox](https://www.proxmox.com/en/) LXC running Ubuntu and [Proxmox Backup Server](https://www.proxmox.com/en/proxmox-backup-server/overview).
+Create a [ProxMox](https://www.proxmox.com/en/) LXC running Debian and [Proxmox Backup Server](https://www.proxmox.com/en/proxmox-backup-server/overview).
 
-Tested on ProxMox v8, PBS 3.1.
+Tested on ProxMox v8, Debian 12, PBS 3.1.
 
 ## Usage
 
